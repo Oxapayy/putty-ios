@@ -18,6 +18,6 @@ xcrun simctl uninstall "$D" com.oxapayy.puttyios || true
 xcrun simctl install "$D" build/dd/Build/Products/Debug-iphonesimulator/PuTTY.app
 xcrun simctl install "$D" "$R"
 FP=$(ssh-keygen -lf "$SP/hostkey.pub" | awk '{print $2}')
-SIMCTL_CHILD_SSH_FP="$FP" SIMCTL_CHILD_SSH_KEY="$SP/userkey_enc" SIMCTL_CHILD_SSH_PASS="$PASS" SIMCTL_CHILD_SSH_USER="$USER_NAME" SIMCTL_CHILD_SSH_PORT=$PORT SIMCTL_CHILD_SHOT_DIR="${SHOT_DIR:-}" SIMCTL_CHILD_DEMO_SCRIPT="${DEMO_SCRIPT:-}" SIMCTL_CHILD_SSH_PLAIN_KEY="$SP/userkey" \
+SIMCTL_CHILD_SSH_FP="$FP" SIMCTL_CHILD_SSH_KEY="$SP/userkey_enc" SIMCTL_CHILD_SSH_PASS="$PASS" SIMCTL_CHILD_SSH_USER="$USER_NAME" SIMCTL_CHILD_SSH_PORT=$PORT SIMCTL_CHILD_SHOT_DIR="${SHOT_DIR:-}" SIMCTL_CHILD_DEMO_SCRIPT="${DEMO_SCRIPT:-}" SIMCTL_CHILD_DEMO_CLIP="${DEMO_CLIP:-}" SIMCTL_CHILD_SSH_PLAIN_KEY="$SP/userkey" \
   xcrun simctl launch --console-pty --terminate-running-process "$D" com.oxapayy.puttyios.uitests.xctrunner > build/runner.txt 2>&1 || true
 grep -E "Test Case|error:|Screen:|Executed" build/runner.txt | grep -v "implemented in both"

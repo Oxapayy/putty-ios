@@ -56,7 +56,8 @@ final class PuTTYUITests: XCTestCase {
         }
     }
 
-    func test1_PasswordPromptAndAccessDenied() {
+    func test1_PasswordPromptAndAccessDenied() throws {
+        if env["DEMO_CLIP"] != nil { throw XCTSkip("recording demo clip") }
         let app = XCUIApplication(bundleIdentifier: "com.oxapayy.puttyios")
         app.launch()
         snapshot(app, "config-window")
@@ -72,7 +73,8 @@ final class PuTTYUITests: XCTestCase {
         snapshot(app, "access-denied")
     }
 
-    func test2_EncryptedKeyLoginAndShell() {
+    func test2_EncryptedKeyLoginAndShell() throws {
+        if env["DEMO_CLIP"] != nil { throw XCTSkip("recording demo clip") }
         let app = XCUIApplication(bundleIdentifier: "com.oxapayy.puttyios")
         if let key = env["SSH_KEY"] { app.launchEnvironment["PUTTY_TEST_KEY"] = key }
         app.launch()
@@ -110,7 +112,7 @@ final class PuTTYUITests: XCTestCase {
 
     /// Marketing screenshots for the website; runs only when SHOT_DIR and DEMO_SCRIPT are set.
     func test3_WebsiteScreenshots() throws {
-        guard env["SHOT_DIR"] != nil, let demo = env["DEMO_SCRIPT"] else { throw XCTSkip("screenshots not requested") }
+        guard env["DEMO_CLIP"] == nil, env["SHOT_DIR"] != nil, let demo = env["DEMO_SCRIPT"] else { throw XCTSkip("screenshots not requested") }
         let app = XCUIApplication(bundleIdentifier: "com.oxapayy.puttyios")
         if let key = env["SSH_PLAIN_KEY"] { app.launchEnvironment["PUTTY_TEST_KEY"] = key }
         app.launch()
@@ -146,5 +148,52 @@ final class PuTTYUITests: XCTestCase {
         waitForTerminal(app, contains: "guest@homelab")
         RunLoop.current.run(until: Date().addingTimeInterval(1))
         snapshot(app, "site-terminal")
+    }
+
+    /// A short screen recording for the website; marks where the cut goes so no login details show.
+    func test4_DemoClip() throws {
+        guard let dir = env["DEMO_CLIP"], let demo = env["DEMO_SCRIPT"] else { throw XCTSkip("clip not requested") }
+        func mark(_ name: String) {
+            try? String(Date().timeIntervalSince1970).write(toFile: "\(dir)/mark-\(name)", atomically: true, encoding: .utf8)
+        }
+        func pause(_ s: Double) { RunLoop.current.run(until: Date().addingTimeInterval(s)) }
+        let app = XCUIApplication(bundleIdentifier: "com.oxapayy.puttyios")
+        if let key = env["SSH_PLAIN_KEY"] { app.launchEnvironment["PUTTY_TEST_KEY"] = key }
+        app.launch()
+        pause(1)
+        mark("start")
+        let hostField = app.textFields.element(boundBy: 0)
+        hostField.tap()
+        hostField.typeText("127.0.0.1")
+        let portField = app.textFields.element(boundBy: 1)
+        portField.tap()
+        portField.typeText(String(repeating: XCUIKeyboardKey.delete.rawValue, count: 5) + port)
+        app.staticTexts["Data"].tap()
+        pause(0.6)
+        let username = app.textFields.element(boundBy: 0)
+        username.tap()
+        username.typeText(user)
+        app.staticTexts["Session"].tap()
+        pause(0.8)
+        app.buttons["Open"].tap()
+        XCTAssertTrue(app.staticTexts["PuTTY Security Alert"].waitForExistence(timeout: 15))
+        pause(2.5)
+        app.buttons["Yes"].tap()
+        mark("cut")
+        waitForTerminal(app, contains: "Authenticating with public key")
+        pause(1)
+        app.typeText("source \(demo)\n")
+        waitForTerminal(app, contains: "guest@homelab")
+        pause(0.4)
+        mark("resume")
+        pause(1)
+        for cmd in ["cal", "colours", "echo $TERM"] {
+            app.typeText(cmd)
+            pause(0.5)
+            app.typeText("\n")
+            pause(1.6)
+        }
+        pause(1.5)
+        mark("end")
     }
 }

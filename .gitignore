@@ -1,0 +1,7 @@
+build/
+DerivedData/
+*.ipa
+.taste-skill/
+xcuserdata/
+.DS_Store
+.vercel

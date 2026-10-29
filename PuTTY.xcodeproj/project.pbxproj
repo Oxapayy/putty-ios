@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13F7E8674ECC38EA34CB1D0D /* PrivateKeyFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E796E9D3C4751166934BD2D3 /* PrivateKeyFile.swift */; };
+		165999D20B1C0D092BED80A2 /* PuTTYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A92E0BDCF8704017A4EDF2A /* PuTTYUITests.swift */; };
+		248E4EB57557BA3D6368A038 /* PuTTYApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1546A3FEC065F83A04E33D8 /* PuTTYApp.swift */; };
+		3759B15942CA0DAC154EAA73 /* Stores.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD21C50260FD420B746FABCA /* Stores.swift */; };
+		4BB766D9C0C8B6623D392DC6 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF370BEFC5A151045EEC916C /* RootView.swift */; };
+		5C30C23EE1CBD2914B58C051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33970714F65EFD1ED37A3E8E /* Assets.xcassets */; };
+		5F8D7B42CCF7670DB7F283BD /* SwiftTerm in Frameworks */ = {isa = PBXBuildFile; productRef = 624F368F571E6B73059E58F7 /* SwiftTerm */; };
+		6028C41333FA1B6C713D162B /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C1E3D12A5C89B525B2942 /* AppState.swift */; };
+		66C1D85812842D5D060CEA07 /* TerminalSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA3F30EED0B27B71E308D6 /* TerminalSession.swift */; };
+		6AE7E6BA060652A4F918C716 /* ConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F58F1344A49918040ADF313 /* ConfigView.swift */; };
+		73AA9587B5ADCB3E41428C26 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 5842EC183212253D2AB94C47 /* Logging */; };
+		73EEB2F98D232840ACE8EA76 /* SessionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF95A5DDCFFC33BFF3CA5 /* SessionConfig.swift */; };
+		9F0BBEB2822F587661200F85 /* WinControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53732D857CCD6785EAECAE4 /* WinControls.swift */; };
+		A2EB1A18BF32802AB5DCF5F3 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206E017605F54003443F9AB6 /* Palette.swift */; };
+		A58ACA352CF96A58785BEB0B /* TCPConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B6ACCE1E766B23F544AB01 /* TCPConnection.swift */; };
+		C3ABA18BDFAE47DBA0CB936A /* PuttyTerminalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2796B1EF1778AB6226FCB41 /* PuttyTerminalView.swift */; };
+		C781C39EC5CD677619A1BE3F /* Citadel in Frameworks */ = {isa = PBXBuildFile; productRef = D9901B204B257BDCE856EA64 /* Citadel */; };
+		F302EF2B16A2FF1C6124CF39 /* SSHConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091400AA7F34F9A847DB6FC8 /* SSHConnection.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6647DDF081800CE53C1AC3F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 337F563108F422AEDEC3B12B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 715A99F3B6BF97570190E871;
+			remoteInfo = PuTTY;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02FA3F30EED0B27B71E308D6 /* TerminalSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalSession.swift; sourceTree = "<group>"; };
+		091400AA7F34F9A847DB6FC8 /* SSHConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHConnection.swift; sourceTree = "<group>"; };
+		206E017605F54003443F9AB6 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
+		33970714F65EFD1ED37A3E8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A92E0BDCF8704017A4EDF2A /* PuTTYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuTTYUITests.swift; sourceTree = "<group>"; };
+		3F58F1344A49918040ADF313 /* ConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigView.swift; sourceTree = "<group>"; };
+		7C378D0919584DC27FC54E49 /* PuTTYUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PuTTYUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		81EC3B3779BD2A534B285804 /* PuTTY.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PuTTY.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90B6ACCE1E766B23F544AB01 /* TCPConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPConnection.swift; sourceTree = "<group>"; };
+		B1546A3FEC065F83A04E33D8 /* PuTTYApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuTTYApp.swift; sourceTree = "<group>"; };
+		BF370BEFC5A151045EEC916C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		C30C1E3D12A5C89B525B2942 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		C53732D857CCD6785EAECAE4 /* WinControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinControls.swift; sourceTree = "<group>"; };
+		E796E9D3C4751166934BD2D3 /* PrivateKeyFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKeyFile.swift; sourceTree = "<group>"; };
+		F2796B1EF1778AB6226FCB41 /* PuttyTerminalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuttyTerminalView.swift; sourceTree = "<group>"; };
+		FA6EF95A5DDCFFC33BFF3CA5 /* SessionConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionConfig.swift; sourceTree = "<group>"; };
+		FD21C50260FD420B746FABCA /* Stores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stores.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8EC285E3FCDA2E3E5EDAE96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C781C39EC5CD677619A1BE3F /* Citadel in Frameworks */,
+				5F8D7B42CCF7670DB7F283BD /* SwiftTerm in Frameworks */,
+				73AA9587B5ADCB3E41428C26 /* Logging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		122127708D7B9B3A4F0B8D14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81EC3B3779BD2A534B285804 /* PuTTY.app */,
+				7C378D0919584DC27FC54E49 /* PuTTYUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2612F6267F6A522F1F5B07D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA6EF95A5DDCFFC33BFF3CA5 /* SessionConfig.swift */,
+				FD21C50260FD420B746FABCA /* Stores.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B77D5734E3D0DEC55CEE0ED /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EEB9E168AFC844468A0728EC /* App */,
+				2612F6267F6A522F1F5B07D2 /* Model */,
+				790F1D0E52564C87C01A0F1B /* SSH */,
+				BB10BED7FEC05B0D0D6C035D /* Terminal */,
+				CDD989E0A9D9C2ACBD3CD621 /* UI */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5FD1E6B1A9A537C553518269 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A92E0BDCF8704017A4EDF2A /* PuTTYUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		790F1D0E52564C87C01A0F1B /* SSH */ = {
+			isa = PBXGroup;
+			children = (
+				E796E9D3C4751166934BD2D3 /* PrivateKeyFile.swift */,
+				091400AA7F34F9A847DB6FC8 /* SSHConnection.swift */,
+				90B6ACCE1E766B23F544AB01 /* TCPConnection.swift */,
+			);
+			path = SSH;
+			sourceTree = "<group>";
+		};
+		B856B172C6FE3A58C723A7B5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				33970714F65EFD1ED37A3E8E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BB10BED7FEC05B0D0D6C035D /* Terminal */ = {
+			isa = PBXGroup;
+			children = (
+				206E017605F54003443F9AB6 /* Palette.swift */,
+				F2796B1EF1778AB6226FCB41 /* PuttyTerminalView.swift */,
+				02FA3F30EED0B27B71E308D6 /* TerminalSession.swift */,
+			);
+			path = Terminal;
+			sourceTree = "<group>";
+		};
+		CDD989E0A9D9C2ACBD3CD621 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3F58F1344A49918040ADF313 /* ConfigView.swift */,
+				BF370BEFC5A151045EEC916C /* RootView.swift */,
+				C53732D857CCD6785EAECAE4 /* WinControls.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D051341C6C86CE84133CDD72 = {
+			isa = PBXGroup;
+			children = (
+				B856B172C6FE3A58C723A7B5 /* Resources */,
+				2B77D5734E3D0DEC55CEE0ED /* Sources */,
+				5FD1E6B1A9A537C553518269 /* UITests */,
+				122127708D7B9B3A4F0B8D14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EEB9E168AFC844468A0728EC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C30C1E3D12A5C89B525B2942 /* AppState.swift */,
+				B1546A3FEC065F83A04E33D8 /* PuTTYApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		715A99F3B6BF97570190E871 /* PuTTY */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847E2E97520753D82C39F1DE /* Build configuration list for PBXNativeTarget "PuTTY" */;
+			buildPhases = (
+				EAED4454EB7CEE6378875B69 /* Sources */,
+				C39253A84CA17386D1BF2F7C /* Resources */,
+				D8EC285E3FCDA2E3E5EDAE96 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PuTTY;
+			packageProductDependencies = (
+				D9901B204B257BDCE856EA64 /* Citadel */,
+				624F368F571E6B73059E58F7 /* SwiftTerm */,
+				5842EC183212253D2AB94C47 /* Logging */,
+			);
+			productName = PuTTY;
+			productReference = 81EC3B3779BD2A534B285804 /* PuTTY.app */;
+			productType = "com.apple.product-type.application";
+		};
+		776D350324D73518230FE7E2 /* PuTTYUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FA86BC7E9B71D60BB923E35 /* Build configuration list for PBXNativeTarget "PuTTYUITests" */;
+			buildPhases = (
+				272AF2F08886019508513BF1 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				914550F204FC5CD56E515B76 /* PBXTargetDependency */,
+			);
+			name = PuTTYUITests;
+			packageProductDependencies = (
+			);
+			productName = PuTTYUITests;
+			productReference = 7C378D0919584DC27FC54E49 /* PuTTYUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		337F563108F422AEDEC3B12B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					715A99F3B6BF97570190E871 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+					776D350324D73518230FE7E2 = {
+						ProvisioningStyle = Manual;
+						TestTargetID = 715A99F3B6BF97570190E871;
+					};
+				};
+			};
+			buildConfigurationList = B8854F8C682E6B3380CDD418 /* Build configuration list for PBXProject "PuTTY" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = D051341C6C86CE84133CDD72;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CC9DEEDE3E27A95E913E7F5C /* XCRemoteSwiftPackageReference "Citadel" */,
+				BADED69E841622CB89E16AE4 /* XCRemoteSwiftPackageReference "SwiftTerm" */,
+				94C1F2436AD22FA90D08BE0F /* XCRemoteSwiftPackageReference "swift-log" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 122127708D7B9B3A4F0B8D14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				715A99F3B6BF97570190E871 /* PuTTY */,
+				776D350324D73518230FE7E2 /* PuTTYUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C39253A84CA17386D1BF2F7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C30C23EE1CBD2914B58C051 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		272AF2F08886019508513BF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				165999D20B1C0D092BED80A2 /* PuTTYUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAED4454EB7CEE6378875B69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6028C41333FA1B6C713D162B /* AppState.swift in Sources */,
+				6AE7E6BA060652A4F918C716 /* ConfigView.swift in Sources */,
+				A2EB1A18BF32802AB5DCF5F3 /* Palette.swift in Sources */,
+				13F7E8674ECC38EA34CB1D0D /* PrivateKeyFile.swift in Sources */,
+				248E4EB57557BA3D6368A038 /* PuTTYApp.swift in Sources */,
+				C3ABA18BDFAE47DBA0CB936A /* PuttyTerminalView.swift in Sources */,
+				4BB766D9C0C8B6623D392DC6 /* RootView.swift in Sources */,
+				F302EF2B16A2FF1C6124CF39 /* SSHConnection.swift in Sources */,
+				73EEB2F98D232840ACE8EA76 /* SessionConfig.swift in Sources */,
+				3759B15942CA0DAC154EAA73 /* Stores.swift in Sources */,
+				A58ACA352CF96A58785BEB0B /* TCPConnection.swift in Sources */,
+				66C1D85812842D5D060CEA07 /* TerminalSession.swift in Sources */,
+				9F0BBEB2822F587661200F85 /* WinControls.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		914550F204FC5CD56E515B76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 715A99F3B6BF97570190E871 /* PuTTY */;
+			targetProxy = 6647DDF081800CE53C1AC3F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08873A669F050FABFB6ED733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oxapayy.puttyios.uitests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PuTTY;
+			};
+			name = Release;
+		};
+		6E493589CC15A5DCAA5F408F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oxapayy.puttyios.uitests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PuTTY;
+			};
+			name = Debug;
+		};
+		7744CD4B22A031A2EAEF9108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PuTTY;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "PuTTY needs local network access to connect to SSH and Telnet servers on your network.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oxapayy.puttyios;
+				PRODUCT_NAME = PuTTY;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A8316BBDDAB70070081DCF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B1FFD128255D21477B85D3E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C0E453DD2287C83480C4C8C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PuTTY;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "PuTTY needs local network access to connect to SSH and Telnet servers on your network.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oxapayy.puttyios;
+				PRODUCT_NAME = PuTTY;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FA86BC7E9B71D60BB923E35 /* Build configuration list for PBXNativeTarget "PuTTYUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E493589CC15A5DCAA5F408F /* Debug */,
+				08873A669F050FABFB6ED733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		847E2E97520753D82C39F1DE /* Build configuration list for PBXNativeTarget "PuTTY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7744CD4B22A031A2EAEF9108 /* Debug */,
+				C0E453DD2287C83480C4C8C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B8854F8C682E6B3380CDD418 /* Build configuration list for PBXProject "PuTTY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1FFD128255D21477B85D3E5 /* Debug */,
+				7A8316BBDDAB70070081DCF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		94C1F2436AD22FA90D08BE0F /* XCRemoteSwiftPackageReference "swift-log" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-log.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.0;
+			};
+		};
+		BADED69E841622CB89E16AE4 /* XCRemoteSwiftPackageReference "SwiftTerm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/migueldeicaza/SwiftTerm.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.99.2;
+			};
+		};
+		CC9DEEDE3E27A95E913E7F5C /* XCRemoteSwiftPackageReference "Citadel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orlandos-nl/Citadel.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.12.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5842EC183212253D2AB94C47 /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 94C1F2436AD22FA90D08BE0F /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
+		};
+		624F368F571E6B73059E58F7 /* SwiftTerm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BADED69E841622CB89E16AE4 /* XCRemoteSwiftPackageReference "SwiftTerm" */;
+			productName = SwiftTerm;
+		};
+		D9901B204B257BDCE856EA64 /* Citadel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC9DEEDE3E27A95E913E7F5C /* XCRemoteSwiftPackageReference "Citadel" */;
+			productName = Citadel;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 337F563108F422AEDEC3B12B /* Project object */;
+}

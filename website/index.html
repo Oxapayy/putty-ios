@@ -4,150 +4,135 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>PuTTY for iOS: SSH, Telnet and Raw for iPhone and iPad</title>
-  <meta name="description" content="A free, open-source SSH, Telnet and Raw client for iPhone and iPad with PuTTY's configuration window, security alerts and login flow. Download the unsigned IPA.">
-  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="description" content="A free, open-source SSH, Telnet and Raw client for iPhone and iPad with PuTTY's configuration window, host key checks and login prompts.">
+  <meta name="theme-color" content="#0b0d14">
   <meta property="og:title" content="PuTTY for iOS">
-  <meta property="og:description" content="The SSH client you know, on iPhone and iPad. Free and open source.">
-  <meta property="og:image" content="https://www.iosxputty.cc/assets/config.jpg">
+  <meta property="og:description" content="PuTTY on your iPhone. A free SSH, Telnet and Raw client for iPhone and iPad.">
+  <meta property="og:image" content="https://www.iosxputty.cc/assets/hero-scene.webp">
+  <meta property="og:url" content="https://www.iosxputty.cc/">
   <link rel="icon" href="assets/icon.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script>document.documentElement.classList.add('js')</script>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="nav">
-    <div class="nav-inner">
-      <a class="nav-brand" href="#top"><img src="assets/icon.png" width="28" height="28" alt=""><span>PuTTY for iOS</span></a>
-      <nav aria-label="Sections">
-        <a href="#features">Features</a>
-        <a href="#install">Install</a>
-        <a href="#faq">FAQ</a>
-        <a href="https://github.com/Oxapayy/putty-ios">GitHub</a>
-      </nav>
-      <a class="btn btn-small" href="https://github.com/Oxapayy/putty-ios/releases/latest/download/PuTTY-iOS-unsigned.ipa">Download</a>
-    </div>
+    <a class="brand" href="#top"><img src="assets/icon.png" width="24" height="24" alt="">PuTTY for iOS</a>
+    <nav aria-label="Sections">
+      <a href="#features">Features</a>
+      <a href="#install">Install</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://github.com/Oxapayy/putty-ios">GitHub</a>
+    </nav>
+    <a class="btn btn-sm" href="https://github.com/Oxapayy/putty-ios/releases/latest/download/PuTTY-iOS-unsigned.ipa">Download</a>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
-      <img class="hero-icon reveal" src="assets/icon.png" width="128" height="128" alt="PuTTY for iOS app icon">
-      <h1 class="reveal">PuTTY for iOS<span class="cursor" aria-hidden="true"></span></h1>
-      <p class="hero-sub reveal">The SSH client you know, now on iPhone and iPad. <br>Free, open source, and nothing is logged.</p>
-      <div class="hero-actions reveal">
-        <a class="btn" href="https://github.com/Oxapayy/putty-ios/releases/latest/download/PuTTY-iOS-unsigned.ipa">Download IPA</a>
-        <a class="link-more" href="https://github.com/Oxapayy/putty-ios">View source on GitHub</a>
+      <img class="hero-scene" src="assets/hero-scene.webp" width="1360" height="768" alt="" fetchpriority="high">
+      <div class="hero-copy">
+        <h1 aria-label="PuTTY, on your iPhone"><span class="typed" data-type="hero" aria-hidden="true">PuTTY, on your iPhone</span><span class="cursor" aria-hidden="true"></span></h1>
+        <p class="lead">A free SSH, Telnet and Raw client for iPhone and iPad, with the configuration window, host key checks and login prompts you know from Windows</p>
+        <div class="actions">
+          <a class="btn" href="https://github.com/Oxapayy/putty-ios/releases/latest/download/PuTTY-iOS-unsigned.ipa">Download IPA</a>
+          <a class="link" href="https://github.com/Oxapayy/putty-ios">Source on GitHub<span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+        <p class="meta">v1.0 · 6.2 MB · iOS 17 or later · MIT licence</p>
       </div>
-      <p class="hero-meta reveal">Version 1.0 · 6.2 MB · Requires iOS 17 or later</p>
-
-      <div class="phones">
-        <figure class="phone phone-side reveal">
-          <img src="assets/security-alert.jpg" width="598" height="1300" alt="The PuTTY Security Alert asking whether to trust a new host key">
-        </figure>
-        <figure class="phone phone-main reveal">
-          <video src="assets/demo.mp4" poster="assets/demo-poster.jpg" width="590" height="1282" muted loop playsinline autoplay preload="metadata"
-                 aria-label="Screen recording: entering a host, accepting the security alert, then running commands in the terminal"></video>
-        </figure>
-        <figure class="phone phone-side reveal">
-          <img src="assets/terminal.jpg" width="598" height="1300" alt="A terminal session with a calendar and PuTTY's sixteen colours">
-        </figure>
-      </div>
+      <figure class="phone hero-phone">
+        <video src="assets/demo.mp4" poster="assets/demo-poster.jpg" width="590" height="1282" muted loop playsinline autoplay preload="metadata"
+               aria-label="Screen recording: entering a host, accepting the PuTTY Security Alert, then running cal in the terminal"></video>
+      </figure>
     </section>
 
     <section class="story" id="features">
-      <div class="story-text reveal">
-        <h2>The window you know, built for touch.</h2>
-        <p>Category tree, host name and port, connection type, saved sessions with Load, Save and Delete. Everything sits where years of PuTTY taught your hands to look, sized for a finger instead of a mouse.</p>
+      <div class="story-text" data-reveal>
+        <h2>The configuration window, sized for a thumb</h2>
+        <p>Category tree, host and port, connection type and saved sessions with Load, Save and Delete. Everything sits where PuTTY always kept it, with touch targets you can hit on a phone at three in the morning.</p>
       </div>
-      <figure class="phone phone-story reveal">
-        <img src="assets/config.jpg" width="598" height="1300" alt="" loading="lazy">
-      </figure>
+      <figure class="phone" data-reveal="phone"><img src="assets/config.jpg" width="598" height="1300" alt="The PuTTY Configuration window on iPhone with saved sessions Home Server, Raspberry Pi and Router" loading="lazy"></figure>
     </section>
 
     <section class="story story-flip">
-      <div class="story-text reveal">
-        <h2>Every new host is checked first.</h2>
-        <p>Before anything is sent, PuTTY shows the server's SHA256 fingerprint and waits for you. Accept it once, cache it for good, or walk away. If a known key ever changes, you get the loud warning.</p>
+      <div class="story-text" data-reveal>
+        <h2>A new host waits for your yes</h2>
+        <p>Before a single key is sent, the PuTTY Security Alert shows the server's SHA256 fingerprint. Cache it, accept it once or walk away. If a known key ever changes, you get the warning in full.</p>
+        <p class="sample"><span>ssh-ed25519 255</span> SHA256:srpK376OKNEDaPyXBuLlfLuSHwBoteohHJ2Jm7jtQeI</p>
       </div>
-      <figure class="phone phone-story reveal">
-        <img src="assets/security-alert.jpg" width="598" height="1300" alt="The PuTTY Security Alert with an ssh-ed25519 fingerprint and Yes, No and Cancel buttons" loading="lazy">
-      </figure>
+      <figure class="phone" data-reveal="phone"><img src="assets/security-alert.jpg" width="598" height="1300" alt="The PuTTY Security Alert with an ssh-ed25519 fingerprint and Yes, No and Cancel" loading="lazy"></figure>
     </section>
 
-    <section class="terminal-band">
-      <div class="story story-dark">
-        <div class="story-text reveal">
-          <h2>A real terminal.</h2>
-          <p>A full xterm with PuTTY's sixteen colours and the green block cursor. Esc, Ctrl, Tab and arrow keys sit above the keyboard, pinch to change the font size, and keep several sessions open at once.</p>
+    <section class="story">
+      <div class="story-text" data-reveal>
+        <h2>A real xterm in your pocket</h2>
+        <p>PuTTY's sixteen colours and the green block cursor, with Esc, Ctrl, Tab and arrow keys above the keyboard. Pinch to resize the font and keep several sessions open from the taskbar.</p>
+      </div>
+      <figure class="phone" data-reveal="phone"><img src="assets/terminal.jpg" width="598" height="1300" alt="A terminal session showing a calendar and the sixteen PuTTY colours" loading="lazy"></figure>
+    </section>
+
+    <section class="features" aria-labelledby="features-title">
+      <h2 id="features-title" data-reveal>What comes with it</h2>
+      <ul class="feature-list" data-reveal="list">
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"/><circle cx="16.5" cy="7.5" r=".5"/></svg>
+          <div><h3>Your own keys</h3><p>OpenSSH and PuTTY .ppk, Ed25519 and RSA. Passphrases are asked at login and never stored</p></div>
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 15h2a2 2 0 1 0 0-4H7v8"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+          <div><h3>Login the PuTTY way</h3><p><code>login as:</code> and <code>user@host's password:</code> right in the terminal, asked again after Access denied</p></div>
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m4 17 6-6-6-6"/><path d="M12 19h8"/></svg>
+          <div><h3>Telnet and Raw</h3><p>For switches, routers and the box under the desk, with window size and terminal type negotiation</p></div>
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="21" x2="14" y1="4" y2="4"/><line x1="10" x2="3" y1="4" y2="4"/><line x1="21" x2="12" y1="12" y2="12"/><line x1="8" x2="3" y1="12" y2="12"/><line x1="21" x2="16" y1="20" y2="20"/><line x1="12" x2="3" y1="20" y2="20"/><line x1="14" x2="14" y1="2" y2="6"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="16" x2="16" y1="18" y2="22"/></svg>
+          <div><h3>Settings that do something</h3><p>Local echo, Backspace as ^H or ^?, bell, cursor shape, font, colour schemes and keepalives</p></div>
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect width="8" height="8" x="2" y="2" rx="2"/><path d="M14 2c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2"/><path d="M20 2c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2"/><path d="M10 18H5c-1.7 0-3-1.3-3-3v-1"/><polyline points="7 21 10 18 7 15"/><rect width="8" height="8" x="14" y="14" rx="2"/></svg>
+          <div><h3>Several sessions</h3><p>Keep more than one host open and switch between them from the taskbar</p></div>
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"/><path d="M14.084 14.158a3 3 0 0 1-4.242-4.242"/><path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"/><path d="m2 2 20 20"/></svg>
+          <div><h3>Nothing is logged</h3><p>No event log, no session logs, no analytics. Saved sessions hold settings, private keys stay in the iOS Keychain</p></div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="install" id="install" aria-labelledby="install-title">
+      <div class="install-head" data-reveal>
+        <h2 id="install-title">Install the unsigned IPA</h2>
+        <p>Pick the tool you already use to sideload</p>
+      </div>
+      <div class="install-card" data-reveal>
+        <div class="segmented" role="tablist" aria-label="Install method">
+          <span class="seg-indicator" aria-hidden="true"></span>
+          <button role="tab" aria-selected="true" aria-controls="steps" data-method="sideloadly">Sideloadly</button>
+          <button role="tab" aria-selected="false" aria-controls="steps" data-method="altstore" tabindex="-1">AltStore</button>
+          <button role="tab" aria-selected="false" aria-controls="steps" data-method="trollstore" tabindex="-1">TrollStore</button>
         </div>
-        <figure class="phone phone-story reveal">
-          <img src="assets/terminal.jpg" width="598" height="1300" alt="" loading="lazy">
-        </figure>
-      </div>
-    </section>
-
-    <section class="grid-section">
-      <h2 class="section-title reveal">Everything you reach for.</h2>
-      <div class="tiles">
-        <article class="tile tile-wide reveal">
-          <h3>Log in the PuTTY way</h3>
-          <p><span class="code">login as:</span> and <span class="code">user@host's password:</span> right in the terminal, asked again after “Access denied”.</p>
-        </article>
-        <article class="tile reveal">
-          <h3>Your own keys</h3>
-          <p>OpenSSH and PuTTY .ppk files, Ed25519 and RSA. Passphrases are asked at login, never stored.</p>
-        </article>
-        <article class="tile reveal">
-          <h3>Telnet and Raw</h3>
-          <p>For switches, routers and the old box under the desk.</p>
-        </article>
-        <article class="tile reveal">
-          <h3>Settings that matter</h3>
-          <p>Local echo, Backspace as ^H or ^?, bell, cursor, font, colour schemes, keepalives.</p>
-        </article>
-        <article class="tile reveal">
-          <h3>Open source</h3>
-          <p>MIT licensed Swift. Read it, build it yourself, or send a fix.</p>
-        </article>
-        <article class="tile tile-wide tile-accent reveal">
-          <h3>Nothing is logged</h3>
-          <p>No event log, no session logs, no analytics. Saved sessions hold settings only. Private keys stay in the iOS Keychain.</p>
-        </article>
-        <article class="tile reveal">
-          <h3>Several sessions</h3>
-          <p>Keep more than one open and switch between them from the taskbar.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="install" id="install">
-      <h2 class="section-title reveal">Install in a few minutes.</h2>
-      <p class="section-sub reveal">The IPA is unsigned. Pick the tool you use to sideload.</p>
-      <div class="segmented reveal" role="tablist" aria-label="Install method">
-        <button role="tab" aria-selected="true" aria-controls="steps" data-method="sideloadly">Sideloadly</button>
-        <button role="tab" aria-selected="false" aria-controls="steps" data-method="altstore" tabindex="-1">AltStore</button>
-        <button role="tab" aria-selected="false" aria-controls="steps" data-method="trollstore" tabindex="-1">TrollStore</button>
-      </div>
-      <div class="install-card reveal" id="steps" role="tabpanel">
-        <ol class="steps" id="step-list">
-          <li><strong>Download the IPA</strong><span>PuTTY-iOS-unsigned.ipa from the latest GitHub release.</span></li>
-          <li><strong>Sign it with Sideloadly</strong><span>Connect your iPhone, drop the IPA onto Sideloadly and sign in with your Apple ID.</span></li>
-          <li><strong>Trust the profile</strong><span>Settings › General › VPN &amp; Device Management, then Trust.</span></li>
-          <li><strong>Open PuTTY</strong><span>Free Apple IDs re-sign every 7 days.</span></li>
+        <ol class="steps" id="steps" role="tabpanel">
+          <li><strong>Download the IPA</strong><span>PuTTY-iOS-unsigned.ipa from the latest GitHub release</span></li>
+          <li><strong>Sign it with Sideloadly</strong><span>Connect your iPhone, drop the IPA onto Sideloadly and sign in with your Apple ID</span></li>
+          <li><strong>Trust the profile</strong><span>Settings › General › VPN &amp; Device Management, then Trust</span></li>
+          <li><strong>Open PuTTY</strong><span>Free Apple IDs re-sign every 7 days</span></li>
         </ol>
-        <div class="install-side">
-          <img src="assets/icon.png" width="72" height="72" alt="">
+        <div class="install-foot">
           <a class="btn" href="https://github.com/Oxapayy/putty-ios/releases/latest/download/PuTTY-iOS-unsigned.ipa">Download IPA</a>
-          <p class="checksum">SHA-256<br><span>c594f94df6bbfc22428cc3313cc7c33b4fd9eef3525caccf6f1a3977c127f15d</span></p>
+          <p class="checksum">SHA-256 c594f94df6bbfc22428cc3313cc7c33b4fd9eef3525caccf6f1a3977c127f15d</p>
         </div>
       </div>
     </section>
 
-    <section class="faq" id="faq">
-      <h2 class="section-title reveal">Questions.</h2>
-      <div class="faq-list reveal">
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title" data-reveal>Questions</h2>
+      <div class="faq-list" data-reveal>
         <details>
           <summary>Is this the official PuTTY?</summary>
           <p>No. It is an independent, unofficial app modelled on PuTTY by Simon Tatham. The code is new Swift, released under the MIT licence.</p>
@@ -176,24 +161,21 @@
     </section>
 
     <section class="closer">
-      <img class="reveal" src="assets/icon.png" width="96" height="96" alt="">
-      <h2 class="reveal">Open a session.</h2>
-      <div class="hero-actions reveal">
+      <h2 aria-label="Open a session"><span class="typed" data-type="closer" aria-hidden="true">Open a session</span><span class="cursor" aria-hidden="true"></span></h2>
+      <div class="actions" data-reveal>
         <a class="btn" href="https://github.com/Oxapayy/putty-ios/releases/latest/download/PuTTY-iOS-unsigned.ipa">Download IPA</a>
-        <a class="link-more" href="https://github.com/Oxapayy/putty-ios/releases">All releases</a>
+        <a class="link" href="https://github.com/Oxapayy/putty-ios/releases">All releases<span class="arrow" aria-hidden="true">→</span></a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-inner">
-      <p>© 2026 Oxa · MIT licence · Unofficial; PuTTY is by Simon Tatham. Built with SwiftTerm and Citadel.</p>
-      <nav aria-label="Footer">
-        <a href="https://github.com/Oxapayy/putty-ios">Source</a>
-        <a href="https://github.com/Oxapayy/putty-ios/issues">Report a problem</a>
-        <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/">The original PuTTY</a>
-      </nav>
-    </div>
+    <p>© 2026 Oxa · MIT licence · Unofficial, PuTTY is by Simon Tatham · Built with SwiftTerm and Citadel</p>
+    <nav aria-label="Footer">
+      <a href="https://github.com/Oxapayy/putty-ios">Source</a>
+      <a href="https://github.com/Oxapayy/putty-ios/issues">Report a problem</a>
+      <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/">The original PuTTY</a>
+    </nav>
   </footer>
 
   <script src="main.js" defer></script>
